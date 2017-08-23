@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+	<head>
+			<!-- Instructs the browser how to read the document. -->
+			<meta charset="utf-8">
+			<!-- Manages issue found with IE8/9 - may no longer be needed -->
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<title>Portfolio</title>
+			<meta name ="viewport" content="width=device-width, initial-scale=1">
+			<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="css/main.css">
+			<link rel="stylesheet" media="screen" href="css/pattern.css">
+	</head>
+	<body>
+			<section class="flex-container">
+					<header class="header">
+						<div class="header__inner">
+								<img class="header__logo" src="img/gears.jpg" alt="iconic view of Logo">
+								<h3>Jansson Portfolio</h3>
+						</div>
+					</header>
+					<nav id="drawer" class="nav">
+						<ul class="nav__list">
+								<li class="nav__item"><a href="#">Home</a></li>
+								<li class="nav__item"><a href="#projects">Projects</a></li>
+								<li class="nav__item"><a href="#topNews">Top News</a></li>
+								<li class="nav__item"><a href="https://github.com/midfielder6/Resume_Builder">Resume</a></li>
+						</ul>
+					</nav>
+
+				  <article>
+								<h1>SE Project ~ Design Solutions</h1>
+								<h4 class="overview_text upper_center">Partner and collaborate with
+									other solution architects to provide innovative and reliable designs
+									across multiple system platforms.
+								</h4>
+					</article>
+
+					<section class="content">
+							<div class="slidercontainer">
+								<div class="showSlide fade">
+										<img src="img/airborne.jpg" alt="Committed 425 ABCT Airborne">
+										<div class="slider_tag">RELIABLE - COMMITTED</div>
+								</div>
+
+								<div class="showSlide fade">
+										<img src="img/climber.png" alt="Engaged Climber">
+										<div class="slider_tag">ORGANIZED - ENGAGED</div>
+								</div>
+								<div class="showSlide fade">
+										<img src="img/innovative.jpg" alt="Innovative Thinker">
+										<div class="slider_tag">INNOVATIVE - CREATIVE</div>
+								</div>
+								<!-- Navigation arrows -->
+								<a class="left" onclick="nextSlide(-1)">&#8656;</a>
+								<a class="right" onclick="nextSlide(1)">&#8658;</a>
+							</div>
+							<script src="js/helperv2.js" type="text/javascript"></script>
+					</section>
+
+					<section class="news">
+							<div id="topNews" class="nogray">
+									<div class="news top-news">
+											<a accesskey="h" id="home" href="#">Home</a>
+				  						<h2 class="_title">Tech News<a href="http://www.dailytech.com/"
+					  						target="_blank" class="news__more" style="text-decoration:none">  (More)</a>
+      								</h2>
+											<ul>
+					  							<li class="top-news__item">
+						  								<a href="http://www.makeuseof.com/tag/switching-linux-operating-systems-feel-like-home/#xndsensel/"
+																target="_blank">A Push to Migrate to Linux</a>
+					  							</li>
+				   								<li class="top-news__item">
+						    							<a href="https://goo.gl/xBw77t" target="_blank">Placing VMs at Network Edge.</a>
+					  							</li>
+					  							<li class="top-news__item">
+						    							<a href="http://about.att.com/story/att_details_5g_evolution.html" target="_blank">
+							    								Wireless: After 4G LTE - What's Next?.</a>
+					  							</li>
+					  							<li class="top-news__item">
+						    							<a href="https://goo.gl/DDhkvN" target="_blank">SDN: Overview NFV and VMWare</a>
+					  							</li>
+					  							<li class="top-news__item">
+						    							<a href="https://goo.gl/VwGzJ9" target="_blank">Security: Senate Bill to BAN Hard-Coded
+							    							Passwords in IoT Devices</a>
+					  							</li>
+											</ul>
+									</div>
+							</div>
+					</section>
+
+					<section class="prjcontainer">
+							<div id="projects" class="nogray">
+					     		<h2 class= "_title">Current Projects</h2>
+											<div class="mydiv">
+							      			<a href="img/vCPEconcept.jpg" target="_blank"><img class="resize" src="img/vCPEconcept.jpg" alt="vBNG Project"></a>
+							           	<p>virtual Border Network Gateway - The vBNG is a virtual CPE residing in the Cloud
+													 	that is used to manage edge network routing between the access
+                           	platform and backbone.  It provides access services
+                           	to subscriber devices, stores security filters and
+								           	QoS settings while acting as a DHCP proxy.
+							           	</p>
+						    		</div>
+                		<div class="mydiv">
+                    			<a href="img/IaaS.GIF" target="_blank"><img class="resize" src="img/IaaS.GIF" alt="IaaS Project"></a>
+							           	<p>Infrastructure as a Service (IaaS)- providing front end user tools
+                           	to facilitate performance monitoring.  This includes
+                           	accessing data mining stores that capture a service performance
+                           	logs and alarms to gauge a functions overall performance.
+							            </p>
+                		</div>
+						    		<div class="mydiv">
+                    			<a href="img/CoA.jpg" target="_blank"><img class="resize" src="img/CoA.jpg" alt="CoA Project"></a>
+							            <p>Change of Authorization (COA)- providing subscriber QoS policy
+								              to RADIUS.  The CoA request packet pushed to a controller
+								              to keep a subscriber's ordered service in sync.
+							            </p>
+						    		</div>
+                		<div class="mydiv">
+                    			<a href="https://github.com/midfielder6/Movie_Trailer" target="_blank"><img class="resize"
+														 src="img/linux-css-html-js.jpg" alt="Movie Trailer Project"></a>
+							            <p>Full Stack Engineering Projects - working program courses outlined
+                              by Udacity focused on Full-stack programming.  The intention is to become
+															more current with programming techniques and languages.  Background in
+															'C', Perl and Assembler.<br><em>
+															[click on image to view Movie Maker Project code on Guthub.]</em>.
+							            </p>
+						    		</div>
+					  	</div>
+					</section>
+					<footer class="footer">
+							<ul>
+									<li><a href="#">Top of Page</a></li>
+									<li><a href="#openModal">About Me</a>
+									<li><img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+							</ul>
+					</footer>
+					<div id="openModal" class="modalDialog">
+							<div>
+									<a href="#close" title="Close" class="close">X</a>
+									<h2>About Me</h2>
+									<p>Current focus is applying new programming skills via small classroom projects
+											using HTML, CSS, Javascript and Python</p>
+									<p>My goal is to become a productive Full Stack developer.</p>
+							</div>
+					</div>
+		 </section>
+	</body>
+</html>

@@ -1,0 +1,411 @@
+/* stored to https://github.com/midfielder6/Portfolio-Project.git */
+/*  Test Boxing Format
+    Uncomment to view webpage boxes
+
+* {
+  margin: 8px;
+  border: red solid 2px;
+  background: rgba(0,0,0,0.25);
+}   */
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  width: 100%;
+}
+
+body {
+  font-family: Roboto;
+  font-size: 12px;
+  color: #424242;
+  padding:10px;
+  padding-bottom:10px;  /* reserved for footer */
+}
+
+.flex_container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+ * Header
+*/
+
+.header {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  min-height: 56px;
+  transition: min-height 0.3s;
+  background-color: #778899;
+  padding:10px;
+  border-top-right-radius: 50px 30px;
+  border-top-left-radius: 50px 30px;
+}
+
+.header__inner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #6875a1;
+}
+
+.header__logo {
+  height: 72px;
+  margin-right: 1em;
+  vertical-align: top;
+  margin-top: 12px;
+}
+
+h1,h3 {
+  position: relative;
+  font-weight: 400;
+  font-size: 4em;
+  font-variant: small-caps;
+  max-width: 40%;
+  margin-top:10px;
+  margin: .5em 0.25em;
+  display: inline-block;
+  color: #212121;
+  background-color: #6875a1;
+  border: 3px solid #8AC007;
+}
+
+.upper_center {
+  max-width: 330px;
+  margin-top:10px;
+  position: relative;
+}
+
+.overview_text {
+   /* margin-top:150px; */
+   line-height: 1.5;
+   font-size: 18px;
+   text-align: center;
+ }
+
+/*
+ *
+ * Top Level Navigation
+ *
+*/
+
+#drawer {
+  background: white;
+  /* min-width: auto; */
+  box-shadow: 0 5px 0;
+
+}
+
+.nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-shadow:0 2px 0 2px gray;
+}
+
+.nav__item {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  line-height: 24px;
+  padding: 1.5em;
+  text-transform: uppercase;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #616161;
+  padding: 1.5em;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #212121;
+}
+
+
+/*
+ * Carousel Slides
+*/
+
+.showSlide {
+     display: none
+}
+     .showSlide img {
+         width: 100%;
+         height: 380px;
+}
+
+ .slidercontainer {
+     float: left;
+     max-width: 360px;
+     position: relative;
+     margin: auto;
+ }
+
+ .left, .right {
+     cursor: pointer;
+     position: relative;
+     width: auto;
+     color: #0000FF;
+     font-weight: bold;
+     font-size: 35px;
+     transition: 0.6s ease;
+     border-radius: 0 3px 3px 0;
+ }
+
+ .right {
+     right: 0;
+     border-radius: 3px 0 0 3px;
+ }
+
+ .left:hover, .right:hover {
+         background-color: slategray;
+         background-color: rgba(115, 115, 115, 0.8);
+ }
+
+ .content {
+     font-size: 20px;
+     padding: 5px;
+     position: relative;
+     width: 100%;
+     text-align: center;
+     float: left;
+ }
+
+ .slider_tag {
+    z-index: 50;
+    position: relative;
+    margin: auto;
+}
+
+ /* Fading animation */
+ .fade {
+     -webkit-animation-name: fade;
+     -webkit-animation-duration: 1.5s;
+     animation-name: fade;
+     animation-duration: 1.5s;
+ }
+
+ @-webkit-keyframes fade {
+     from {
+         opacity: .4
+     }
+     to {
+         opacity: 1
+     }
+ }
+
+ @keyframes fade {
+     from {
+         opacity: .4
+     }
+     to {
+         opacity: 1
+     }
+ }
+
+
+/*
+ Project Details
+*/
+
+.prjcontainer {
+  width: 100%;
+  float: left;
+  padding-top: 1em;
+  margin: 20px 5px 40px;
+}
+
+img.resize {
+  max-width:70%;
+  max-height:70%;
+}
+
+.mydiv {
+  float: left;
+  border: solid 2px blue;
+  box-sizing: border-box;
+  background-color: white;
+  position: relative;
+  width: 45%;
+  height: 300px;
+  color: darkslateblue;
+  padding: 2px;
+  text-align: left;
+  margin:5px 15px 35px
+}
+
+.nogray {
+  width: 100%;
+}
+
+/*
+ *
+ * Top News
+ *
+ */
+
+.news {
+  width: 100%;
+}
+
+.top-news {
+  float: right;
+  width: 100%;
+  border-bottom: 1px solid #E0E0E0;
+  padding: 1em;
+}
+
+._title {
+  font-weight: 300;
+  border-bottom: 10px solid #E0E0E0;
+  line-height: 24px;
+  font-size: 30px;
+  font-variant: small-caps;
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+
+}
+
+.top-news__item {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 1em 0;
+  line-height: 19.2px;
+  font-size: 15px;
+}
+
+.top-news__item:before {
+  content: "» ";
+}
+
+.top-news__item:last-child {
+  border-bottom: none;
+}
+
+
+.top-news__item a {
+  text-decoration: none;
+  color: #666;
+  padding: 1.5em;
+}
+
+.top-news__item a:hover,
+.top-news__item a:active {
+  text-decoration: underline;
+}
+
+.news__more {
+  font-size: .75em;
+  color: #333;
+  text-decoration: none;
+  padding-right: 30px;
+}
+
+/*
+ * Footer
+*/
+
+/* About Me Dialog Box */
+.modalDialog {
+	position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(#4c4c4c);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 50%;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 12px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	/* width: 24px; */
+	text-decoration: none;
+	/* font-weight: bold; */
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }
+
+.footer {
+  font-style: italic;
+  color: #999999;
+  padding: 10px;
+  font-size: 15px;
+  clear: both;
+  background-color: #778899;
+  border-bottom-left-radius:15px;
+  border-bottom-right-radius:15px 25px;
+}
+
+ .footer li {
+  display: inline-block;
+  padding: 1em;
+ }
+
+.footer a {
+  text-decoration: none;
+  padding: 1em;
+}
